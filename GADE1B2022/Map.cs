@@ -9,22 +9,25 @@ namespace GADE1B2022
     internal class Map
     {
         private int[,] tileArray;
-
+       // public Enemy Goblin, Mage;
         const int tilesX = 100;
         const int tilesY = 100;
         const int tilesLayer = 5;
+        //Enemy Goblinn = new Goblin(4, 4);
+        public Enemy[] Enemies = new Enemy[] { new Goblin(), new Mage ()};
+
         Tile tm = new Tile(tilesLayer, tilesX, tilesY); //
         private int numberOfEnemies = 0;
         Hero Herochar = new Hero(); //A Hero object to represent the player character
         // This character array will be updated at all times to show the status of the map.Remember when initializing your map that it must be bordered with Obstacle tiles around the outside to prevent Character movement outside of the map.
-        private Enemy[] enemyArray = new Enemy[];
+        private Enemy[] enemyArray = new Enemy[] { };
         Random Random = new Random(); // A Random object for randomising numbers.
 
 
         public Map (int width, int height, int NumberOfEnemies)
         {
-            tilesX = width;
-            tilesY = height;
+            width = tilesX;
+            height = tilesY ;
             numberOfEnemies = NumberOfEnemies;
             //and creates a new 2D Tile array of that size, as well as setting the width and height variables.
             Enemy[] enemy = new Enemy[Random.Next(NumberOfEnemies)];

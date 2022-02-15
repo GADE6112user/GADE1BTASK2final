@@ -11,6 +11,7 @@ namespace GADE1B2022
         protected int hp;
         protected int maxHp;
         protected int damage;
+        protected int goldPurse;
         protected Tile[] CharacterVison = new Tile[3];
         public readonly Character ctype;
         public int Hp
@@ -57,7 +58,7 @@ namespace GADE1B2022
             //Checks if a target is in range of a character(barehanded range is always 1, but this will be extended with weapon types later). It determines distance via the DistanceTo() method and returns true or false.
             return false;
         }
-        private int DistanceTo(target)
+        private int DistanceTo(Character target)
         {
             //used by CheckRange(): Determines the absolute distance(number of spaces needed to move – e.g.diagonal is one up + one across = 2) between a character and its target.
             return 0;
@@ -66,7 +67,7 @@ namespace GADE1B2022
         {
             //Edits a unit’s X and Y values to move it up / down / left / right based on the identifier from the enum.
         }
-        public abstract  MovementEnum () ReturnMove(MovementEnum move = 0); // 2.3 ??
+        public abstract  MovementEnum () ReturnMove(MovementEnum move = 0) // 2.3 ??
         {
             
         }
@@ -74,6 +75,9 @@ namespace GADE1B2022
         {
             return;
         }
+    public void Pickup(Item i)
+    {
+        if (i == null) ;
     }
-}
+    }
 
