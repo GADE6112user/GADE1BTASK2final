@@ -10,6 +10,8 @@ namespace GADE1B2022
     {
         private Map gameMap;
         private static readonly char heroTile = 'H', emptyTile = 'X', goblinTile = 'G', obstacleTile = 'O';
+        private Enemy[] enemy = new Enemy[2];
+        Random random = new Random(2);
         public Map GameMap
         {
             get { return gameMap; }
@@ -18,9 +20,12 @@ namespace GADE1B2022
         public GaneEngine(Map map) // 3.3 ?????
         {
             gameMap = map;
+            enemy[0] = Mage;
+            enemy[1] = Goblin;
 
-            public bool MovePlayer(MovementEnum direction);
+            
         }
+        public bool MovePlayer(MovementEnum direction);
         public void MovePlayer()
         {
             // ?????????? 4.2
