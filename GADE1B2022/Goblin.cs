@@ -12,7 +12,7 @@ namespace GADE1B2022
         private int damage = 1;
         public delegate int goblinHP(int hp);
         public delegate int goblinDamage(int damage);
-        public Goblin (int x,int y) //2.5 ?
+        public Goblin (Enemy.xPos, Enemy.yPos, int Hp, int Damage) //2.5 ?
         {
             hp = Hp;
             damage = Damage;

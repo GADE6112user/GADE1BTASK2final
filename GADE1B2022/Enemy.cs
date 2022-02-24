@@ -13,8 +13,8 @@ namespace GADE1B2022
         private int enemyDamage = 0;
         private int enemyHp = 0;
         private int enemyMaxHp = 0;
-        public int x = 0;
-        public int y = 0;
+        private int x = 0;
+        private int y = 0;
         public delegate int xPos(int x); // ??
         public delegate int yPos(int y);
 
