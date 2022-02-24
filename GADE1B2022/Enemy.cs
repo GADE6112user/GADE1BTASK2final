@@ -32,6 +32,12 @@ namespace GADE1B2022
         {
             return; //EnemyClassName at [X, Y] (Amount DMG) 
         }
+        public virtual Movement ReturnMove()
+        {
+            Movement movement = new Movement();
+            return movement;
+        }
+
     }
-    
+
 }
