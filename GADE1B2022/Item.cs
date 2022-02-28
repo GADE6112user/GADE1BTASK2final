@@ -14,7 +14,7 @@ namespace GADE1B2022
         {
 
         }
-        public override string ToString(Tile Item)
+        public abstract override string ToString(Tile Item)
         {
             
             itemType = Item.tileType; // 2.1 ??

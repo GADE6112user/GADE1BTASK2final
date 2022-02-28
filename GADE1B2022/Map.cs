@@ -42,8 +42,5 @@ namespace GADE1B2022
         {
             throw new NotImplementedException();
         }
-
-
-// -------------------You will need to create your own other methods inside of the Map class to allow it to integrate with the game overall.------------------------
     }
 }
